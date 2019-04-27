@@ -9,7 +9,7 @@ const Features = () => {
             <i className="fas fa-mobile-alt" />
           </div>
           <h3 className="feature-title">
-            <span className="inline-heading h3 no-italic">Superbly</span>
+            <span className="inline-heading h3 no-italic">Superbly </span>
             responsive
           </h3>
           <p className="feature-description">
