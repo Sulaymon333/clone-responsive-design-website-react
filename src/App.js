@@ -1,6 +1,5 @@
 import React from 'react';
 import './CSS/base.css';
-import './CSS/contact-us.css';
 import Header from './Components/Header';
 import Main from './Components/Main';
 import Footer from './Components/Footer';

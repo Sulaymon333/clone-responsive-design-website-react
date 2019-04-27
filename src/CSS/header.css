@@ -7,33 +7,11 @@
   -o-border-image: url(../assets/Border-BG.jpg) 50 round;
   border-image: url(../assets/Border-BG.jpg) 50 round;
 }
-/* .main-header::after {
-  content: "";
-  display: table;
-  position: absolute;
-  transform: rotateY(180deg); 
-  opacity: 0.5;
-} */
-
-.hero-items::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: solid 45px var(--global-blue);
-  border-right: solid 45px transparent;
-  top: 100%;
-  left: 0;
-}
 
 .hero-items {
   display: flex;
   flex-direction: column;
   position: relative;
-  /* flex-wrap: wrap;
-  align-content: space-between; */
-  /* justify-content: space-between; */
-  /* height: 30vh; */
 }
 .hero {
   display: flex;

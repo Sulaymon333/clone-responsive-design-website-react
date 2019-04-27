@@ -1,6 +1,7 @@
 import React from 'react';
 import '../CSS/header.css';
 import HeaderImage from '../assets/Header-img.png';
+import CallToAction from './CallToAction';
 
 const Header = () => {
   return (
@@ -20,13 +21,8 @@ const Header = () => {
             <button className="btn blue">Learn more</button>
           </div>
         </div>
-        <div className="action-box get-started">
-          <h2>
-            Create a <span className="inline-heading h2">powerful</span> solutions now!
-          </h2>
-          <button className="btn grey">Get started</button>
-        </div>
       </div>
+      <CallToAction textOne="Create a" textTwo="Powerful" textThree={'Solutions Now!'} btnText="Get started" />
     </header>
   );
 };

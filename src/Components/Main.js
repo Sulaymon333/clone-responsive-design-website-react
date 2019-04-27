@@ -5,6 +5,7 @@ import '../CSS/testimonial-development.css';
 import TestimonyDevelopment from './TestimonialDevelopment';
 import Features from './Features';
 import RecentWork from './RecentWorks';
+import CallToAction from './CallToAction';
 
 const Main = () => {
   return (
@@ -24,12 +25,7 @@ const Main = () => {
       </div>
       <TestimonyDevelopment />
       <section className="contact-us-section">
-        <div className="action-box contact-us container">
-          <h2>
-            Get in touch with us <span className="inline-heading h2">Now!</span>
-          </h2>
-          <button className="btn grey">Contact us</button>
-        </div>
+        <CallToAction textOne="Get in touch with us " textTwo="Now!" btnText="Contact us" />
       </section>
     </main>
   );

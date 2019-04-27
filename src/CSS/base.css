@@ -145,7 +145,10 @@ a {
     width: 90%;
     margin: 0 auto;
   }
-  .contact-us {
+  /* .contact-us {
+    margin-top: 20rem;
+  } */
+  .contact-us-section .action-box {
     margin-top: 20rem;
   }
 }

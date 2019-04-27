@@ -2,10 +2,11 @@
   padding-bottom: 0;
   padding-top: 0;
 }
-.contact-us {
+
+.action-box {
   position: relative;
 }
-.contact-us::after {
+.action-box::after {
   content: '';
   border-top: solid 45px var(--global-blue);
   border-right: solid 45px transparent;
