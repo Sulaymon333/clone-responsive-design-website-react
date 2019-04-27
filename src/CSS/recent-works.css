@@ -1,0 +1,31 @@
+/* Recent work */
+.recent-work {
+  padding-top: 2.5rem;
+}
+
+.recent-work-boxes .box-3-col::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: solid 45px white;
+  border-right: solid 45px transparent;
+  top: 100%;
+  left: 0;
+}
+
+.recent-work-boxes .box-1,
+.recent-work-boxes .box-2,
+.recent-work-boxes .box-3 {
+  background: #fff;
+  box-shadow: -1px 14px 32px -10px rgba(0, 0, 0, 0.61);
+}
+
+.recent-work-boxes .box-3-col h4 {
+  color: var(--dark-color);
+  padding: 1.2rem 2rem 0 2rem;
+}
+.recent-work-boxes .box-3-col p {
+  font-style: italic;
+  padding: 0.2rem 2rem 3rem 2rem;
+}
