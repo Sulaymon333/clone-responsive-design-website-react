@@ -1,6 +1,9 @@
 import React from 'react';
+
 import '../CSS/header.css';
+
 import HeaderImage from '../assets/Header-img.png';
+
 import CallToAction from './CallToAction';
 
 const Header = () => {
@@ -13,8 +16,8 @@ const Header = () => {
           </div>
           <div className="hero-description">
             <h1>
-              <span className="inline-heading h1">Powerful Simple</span> with a
-              <span className="inline-heading h1">Squeeky clean</span>
+              <span className="inline-heading h1">Powerful Simple </span>with a
+              <span className="inline-heading h1"> Squeeky clean </span>
               design.
             </h1>
             <p>Find out how you can offer quick and powerful solutions to your customers now!</p>
