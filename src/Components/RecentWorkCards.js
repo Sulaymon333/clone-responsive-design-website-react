@@ -1,8 +1,7 @@
 import React from 'react';
-import recentWorks from '../recent-works';
-// import PlaceholderImage from '../assets/img-placeholder.png';
+import '../CSS/recent-works.css';
 
-const RecentWorkCards = () => {
+const RecentWorkCards = ({ recentWorks }) => {
   const recentWorkList = recentWorks.map((recentWork, i) => {
     const { workImg, workTitle, workDescription } = recentWork;
     const boxNum = `box-3-col box-${i + 1}`;

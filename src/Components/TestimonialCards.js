@@ -1,41 +1,28 @@
 import React from 'react';
+import '../CSS/testimonial-development.css';
 
-const TestimonyDevelopment = () => {
+const TestimonialCards = ({ testimonials }) => {
+  const testimonialList = testimonials.map((testimonial, i) => {
+    const { name, testimonialDescription } = testimonial;
+    const boxNum = `box-3-col box-${i + 1}`;
+    return (
+      <div className={boxNum} key={name + i}>
+        <div className="top">
+          <h4 className="testimonial-title">{name}</h4>
+          <p className="testimonial-description">&ldquo;{testimonialDescription}&rdquo;</p>
+        </div>
+        <div className="bottom">
+          <h4 className="testimonial-title">Johh Smith</h4>
+          <p className="testimonial-description">&ldquo;{testimonialDescription}&rdquo;</p>
+        </div>
+      </div>
+    );
+  });
+
   return (
     <section className="container testimonial-development">
       <div className="testimonial-development-boxes boxes">
-        <div className="box-3-col box-1">
-          <div className="top">
-            <h4 className="testimonial-title">John Smith</h4>
-            <p className="testimonial-description">
-              &ldquo;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi dignissimos illum
-              tempora animi. At autem temporibus maxime ullam eos.&rdquo;
-            </p>
-          </div>
-          <div className="bottom">
-            <h4 className="testimonial-title">Johh Smith</h4>
-            <p className="testimonial-description">
-              &ldquo;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi dignissimos illum
-              tempora animi. At autem temporibus maxime ullam eos.&rdquo;
-            </p>
-          </div>
-        </div>
-        <div className="box-3-col box-2">
-          <div className="top">
-            <h4 className="testimonial-title">John Smith</h4>
-            <p className="testimonial-description">
-              &ldquo;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi dignissimos illum
-              tempora animi. At autem temporibus maxime ullam eos.&rdquo;
-            </p>
-          </div>
-          <div className="bottom">
-            <h4 className="testimonial-title">John Smith</h4>
-            <p className="testimonial-description">
-              &ldquo;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi dignissimos illum
-              tempora animi. At autem temporibus maxime ullam eos.&rdquo;
-            </p>
-          </div>
-        </div>
+        {testimonialList}
         <div className="box-3-col box-3 tabs">
           <div className="tab">
             <input name="checkbox-tabs-group" type="radio" id="checkbox-1" className="checkbox-tab" />
@@ -74,4 +61,5 @@ const TestimonyDevelopment = () => {
     </section>
   );
 };
-export default TestimonyDevelopment;
+
+export default TestimonialCards;

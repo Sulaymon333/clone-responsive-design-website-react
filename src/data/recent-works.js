@@ -1,4 +1,4 @@
-import PlaceholderImage from './assets/img-placeholder.png';
+import PlaceholderImage from '../assets/img-placeholder.png';
 const recentWorks = [
   {
     workImg: PlaceholderImage,
